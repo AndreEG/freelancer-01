@@ -1,0 +1,12 @@
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+hr {
+    max-width: 280px;
+    padding: 10px;
+}
