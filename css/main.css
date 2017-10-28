@@ -71,14 +71,13 @@ li {
 
 header {
     outline: 1px solid green;
-    height: 1000px;
+    height: 680px;
     background-color: #18bc9c;
     text-align: center;
     color: #fff;
 }
 
 .container {
-    outline: 1px solid red;
     position: relative;
     top: 90px;
 }
@@ -86,30 +85,65 @@ header {
 h1 {
     font-size: 75px;
     font-weight: 900;
-    margin: 28px 0;
+    margin: 28px 0 0 0;
 }
 
 header div span {
     font-size: 28px;
 }
 
+/*aplicando estilos al separador blanco*/
 
-
-
-
-
-
-
-hr {
-    border-style: none;
-    max-width: 280px;
-    border-top: solid 5px;
+.star {
+    padding: 30px;
+    position: relative;
 }
 
-hr::after {
+.star hr {
+    height: 5px;
+    border-style: none;
+    max-width: 280px;
+    background: #fff;
+    top: 50%;    
+}
+
+.star hr::after {
     color: #fff;
     background-color: #18bc9c;
     font-family: fontAwesome;
     content: '\f005';
-    font-size: 35px;
+    font-size: 32px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateY(50%) translateX(-50%);
+    padding: 0 8px;
+}
+
+/*aplicando estilos al separador azul*/
+
+.star-blue {
+    padding: 30px;
+    position: relative;
+}
+
+.star-blue hr {
+    height: 5px;
+    border-style: none;
+    max-width: 280px;
+    background: #2c3e50;
+    top: 50%;    
+}
+
+.star-blue hr::after {
+    color: #2c3e50;
+    background-color: #fff;
+    font-family: fontAwesome;
+    content: '\f005';
+    font-size: 32px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateY(50%) translateX(-50%);
+    padding: 0 8px;
 }
