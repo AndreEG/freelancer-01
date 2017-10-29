@@ -50,76 +50,76 @@
         <h2 class="font-montserrat">PORTFOLIO</h2>
         <div class="star-blue"><hr></div><!--aqui va la estrella-->
         <div class="images-portafolio"><!--tendra un tamaño de aprox 80%-->
-            <img src="assets/images/portfolio/cabin.png" alt="cabin"><!--las imagenes van a tener un tamaño especifico y van a flotar-->
-            <img src="assets/images/portfolio/cake.png" alt="cake">
-            <img src="assets/images/portfolio/circus.png" alt="circus">
-            <img src="assets/images/portfolio/game.png" alt="game">
-            <img src="assets/images/portfolio/safe.png" alt="safe">
-            <img src="assets/images/portfolio/submarine.png" alt="submarine">
+            <figure><img src="assets/images/portfolio/cabin.png" alt="cabin"></figure><!--las imagenes van a tener un tamaño especifico y van a flotar-->
+            <figure><img src="assets/images/portfolio/cake.png" alt="cake"></figure>
+            <figure><img src="assets/images/portfolio/circus.png" alt="circus"></figure>
+            <figure><img src="assets/images/portfolio/game.png" alt="game"></figure>
+            <figure><img src="assets/images/portfolio/safe.png" alt="safe"></figure>
+            <figure><img src="assets/images/portfolio/submarine.png" alt="submarine"></figure>
         </div>
     </section>
 
     <section id="about">
-        <h2>ABOUT</h2>
-        <div class="star"><hr></div><!--aqui va la estrella-->
-        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-        <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-        <a href="#">Download Theme</a>
+        <div class="container">
+            <h2 class="font-montserrat">ABOUT</h2>
+            <div class="star"><hr></div><!--aqui va la estrella-->
+            <p class="font-lato">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+            <p class="font-lato">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            <a href="#" class="font-lato"><i class="fa fa-download" aria-hidden="true"></i>Download Theme</a>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>CONTACT ME</h2>
+        <h2 class="font-montserrat">CONTACT ME</h2>
         <div class="star-blue"><hr></div><!--aqui va la estrella-->
         <form action="#">
             <div class="group-form">
-                <div>
-                    <label id="name">Name</label><!--que este oculto y alga con focus?-->
-                    <input id="name" type="text" placeholder="Name">
+                <div class="input-container">
+                    <label id="name" class="font-lato">Name</label><!--que este oculto y alga con focus?-->
+                    <input id="name" type="text" placeholder="Name" class="font-lato">
                 </div>
             </div>
             <div class="group-form">
-                <div>
-                    <label id="email">Email Address</label>
-                    <input id="email" type="text" placeholder="Email Address">
+                <div class="input-container">
+                    <label id="email" class="font-lato">Email Address</label>
+                    <input id="email" type="text" placeholder="Email Address" class="font-lato">
                 </div>
             </div>
             <div class="group-form">
-                <div>
-                    <label id="number" >Phone Number</label>
-                    <input id="number" type="text" placeholder="Phone Number">
+                <div class="input-container">
+                    <label id="number" class="font-lato">Phone Number</label>
+                    <input id="number" type="text" placeholder="Phone Number" class="font-lato">
                 </div>
             </div>
             <div class="group-form">
-                <div>
-                    <label id="message" >Message</label>
-                    <textarea  id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <div class="input-container">
+                    <label id="message" class="font-lato">Message</label>
+                    <textarea  id="message" cols="30" rows="10" placeholder="Message" class="font-lato"></textarea>
                 </div>
             </div>
-            <input type="submit" value="Send">
+                <input id="button" type="submit" value="Send">
         </form>
-    </section>
+    </section> 
 
     <footer>
         <div>
-            <div>
-                <h4>LOCATION</h4>
-                <p>3481 Melrose Place Beverly Hills, CA 90210</p>
+            <div class="information">
+                <h4 class="font-montserrat">LOCATION</h4>
+                <p class="font-lato">3481 Melrose Place <br> Beverly Hills, CA 90210</p>
             </div>
-            <div>
-                <h4>AROUND THE WEB</h4>
-                <ul>
-                    <li><a href="#"><i class="fa fa-fw fa-facebook"></i></a></li><!--el a lo va a convertir en circulo-->
-                    <li><a href="#"><i class="fa fa-fw fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-fw fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-fw fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-fw fa-dribbble"></i></a></li>
-                </ul>
+            <div class="information">
+                <h4 class="font-montserrat">AROUND THE WEB</h4>
+                <div class="redes"><a href="#"><i class="fa fa-fw fa-facebook"></i></a></div><!--el a lo va a convertir en circulo-->
+                <div class="redes"><a href="#"><i class="fa fa-fw fa-google-plus"></i></a></div>
+                <div class="redes"><a href="#"><i class="fa fa-fw fa-twitter"></i></a></div>
+                <div class="redes"><a href="#"><i class="fa fa-fw fa-linkedin"></i></a></div>
+                <div class="redes"><a href="#"><i class="fa fa-fw fa-dribbble"></i></a></div>
             </div>
-            <div>
-                <h4>ABOUT FREELANCER</h4>
-                <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#"> Start Bootstrap</a>.</p>
+            <div class="information">
+                <h4 class="font-montserrat">ABOUT FREELANCER</h4>
+                <p class="font-lato">Freelance is a free to use, open source Bootstrap theme created by <a href="#"> Start Bootstrap</a>.</p>
             </div>
-            <p>Copyright © Your Website 2017</p>
+            <p class="copyright font-lato">Copyright © Your Website 2017</p>
         </div>
     </footer>
     
