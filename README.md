@@ -49,4 +49,22 @@ a lograr:
 
 ## CSS
 
-* 
+Los primeros estilos en CSS fueron los generales, por ejemplo limpiar el BODY los UL e incluso los A. 
+
+* **NAV** los primeros estilos a aplicar en la barrra de navegación fueron su position FIXED, su width y height además de el Z-INDEX que indica su importancia en cuanto a capas. El div contenedor de la palabra que servira de enlace al la pantalla principal y el div que contiene el UL con sus LI fueron modificados con display INLINE BLOCK para que puedan ser visualizados todos en una misma linea; y por ultimo se aplico los respectivos efectos cuando el usuario hace HOVER sobre cualquiera de los LI.
+
+* **HEADER** dentro del header basto con aplicar medidas y centrar todo el contenido.
+
+* **SECTION PORTFOLIO** se le dio medida al contenedor general de las imagenes y a los div que las contenian a su vez; el DISPLAY usado para las mismas fue INLINE BLOCK. que nos permite visualizarlas una seguida de la otra; se ha agregado un color de fondo para que al hacer HOVER la imagen pueda mostrarse transparente y muestre el color de fondo.
+
+* **SECTION ABOUT** about necesitaba que los P esten uno al lado del otro por lo cual se aplico FLOAT; se les dio las dimensiones adecuadas y estilos. Para el boton que aparece debajo de los parrafos se modifico el display de A para poder manipular sus medidas y se cambio el color al hacer HOVER.
+
+* **SECTION CONTACT** el contenido de contact se basa en su mayoria en INPUT los cuales estan acompañados de LABEL dentro de un DIV de clase "input-container" que a su vez estaran contenidos en un FORM; a todos ellos se les ha limpiado los estilos por defecto para aplicar la linea que debe tener debajo de cada input y el INPUT de tipo SUBMIT.
+
+* **FOOTER** el footer esta dividido en 3 DIV que han sido flotados, uno de los cuales contiene un juego de iconos cuyo color y background cambian al hacerle HOVER.
+
+## PAGINA WEB RESPONSIVE
+
+Mediante @media se ha posido dar una dimension mas adecuada a los elementos que lo necesitan cuando la medida de la pantalla no es la misma.
+
+
