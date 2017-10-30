@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
 
@@ -17,7 +19,7 @@
                 <a href="#"><span>START BOOTSTRAP</span></a>
         </div>
         <div class="menu-bar"><!--va a contener el menu para cuando la pantalla cambie pueda ser desplegable-->
-            <ul>
+            <ul>MENU
                 <li>
                     <a href="#portfolio">
                         <span>PORTFOLIO</span>
@@ -47,15 +49,29 @@
     </header>
 
     <section id="portfolio">
-        <h2 class="font-montserrat">PORTFOLIO</h2>
-        <div class="star-blue"><hr></div><!--aqui va la estrella-->
-        <div class="images-portafolio"><!--tendra un tamaño de aprox 80%-->
-            <figure><img src="assets/images/portfolio/cabin.png" alt="cabin"></figure><!--las imagenes van a tener un tamaño especifico y van a flotar-->
-            <figure><img src="assets/images/portfolio/cake.png" alt="cake"></figure>
-            <figure><img src="assets/images/portfolio/circus.png" alt="circus"></figure>
-            <figure><img src="assets/images/portfolio/game.png" alt="game"></figure>
-            <figure><img src="assets/images/portfolio/safe.png" alt="safe"></figure>
-            <figure><img src="assets/images/portfolio/submarine.png" alt="submarine"></figure>
+        <div class="container">
+            <h2 class="font-montserrat">PORTFOLIO</h2>
+            <div class="star-blue"><hr></div><!--aqui va la estrella-->
+            <div class="images-portafolio"><!--tendra un tamaño de aprox 80%-->
+                <figure class="image">
+                    <a href="#"><img src="assets/images/portfolio/cabin.png" alt="cabin"></a>
+                </figure>
+                <figure class="image">
+                    <a href="#"><img src="assets/images/portfolio/cake.png" alt="cake"></a>
+                </figure>
+                <figure class="image">
+                    <a href="#"><img src="assets/images/portfolio/circus.png" alt="circus"></a>
+                </figure>
+                <figure class="image">
+                    <a href="#"><img src="assets/images/portfolio/game.png" alt="game"></a>
+                </figure>
+                <figure class="image">
+                    <a href="#"><img src="assets/images/portfolio/safe.png" alt="safe"></a>
+                </figure>
+                <figure class="image">
+                    <a href="#"><img src="assets/images/portfolio/submarine.png" alt="submarine"></a>
+                </figure>
+            </div>
         </div>
     </section>
 
@@ -117,7 +133,7 @@
             </div>
             <div class="information">
                 <h4 class="font-montserrat">ABOUT FREELANCER</h4>
-                <p class="font-lato">Freelance is a free to use, open source Bootstrap theme created by <a href="#"> Start Bootstrap</a>.</p>
+                <p class="font-lato">Freelance is a free to use, open source Bootstrap theme created by <a href="https://startbootstrap.com/"> Start Bootstrap</a>.</p>
             </div>
             <p class="copyright font-lato">Copyright © Your Website 2017</p>
         </div>

@@ -1,26 +1,35 @@
+
+/*agregando estilos generales*/
+
 body {
-        margin: 110px 0 0 0;
-        padding: 0;
+    background: #18bc9c;
+    margin: 110px 0 0 0;
+    padding: 0;
+        
 }
 
-/*limpiando estilos predeterminados*/
+.container {
+    position: relative;
+    text-align: center;
+}
 
 ul{
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;   
 }
 
 h2 {
     font-size: 45px;
     font-weight: 700;
-    margin: 100px 0 0 0;
+    margin: 0;
+    padding: 100px 0 0 0;
     text-align: center;
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;  
 }
 
 .font-montserrat {
@@ -34,21 +43,27 @@ a {
 /*dando estilos a nav*/
 
 nav {
+    background-color: #2c3e50;
+    color: #fff;
+    width: 100%;
+    height: 110px;
+    margin: 0;
+    padding: 0;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    width: 100%;
-    height: 110px;
-    background-color: #2c3e50;
-    color: #fff;
-    margin: 0;
-    padding: 0;
     z-index: 1000;
 }
 
+.nav-2 {/*valor que se dara con el scroll*/
+    height: 66px;
+}
+.nav-2 .start {/*valor que se dara con el scroll*/
+    font-size: 20px;
+}
+
 .start {
-    /*outline: 1px solid blue;*/
     display: inline-block;
     font-size: 30px;
     font-weight: 900;
@@ -59,7 +74,6 @@ nav {
 }
 
 .menu-bar {
-    /*outline: 1px solid yellow;*/
     text-align: right;
     display: inline-block;
     position: absolute;
@@ -81,17 +95,14 @@ li a:hover {
 /*aplicando estilos a header*/
 
 header {
-    height: 680px;
     background-color: #18bc9c;
-    text-align: center;
     color: #fff;
+    height: 680px;
+    text-align: center;
 }
 
-.container {
-    outline: 1px solid yellow;
-    position: relative;
-    top: 90px;
-    text-align: center;
+header .container {
+    padding: 90px 0 0 0;
 }
 
 h1 {
@@ -101,8 +112,8 @@ h1 {
 }
 
 header div span {
-    font-size: 28px;
     display: block;
+    font-size: 28px;
     margin: 10px;
 }
 
@@ -114,24 +125,23 @@ header div span {
 }
 
 .star hr {
-    height: 5px;
+    background: #fff;  
     border-style: none;
-    max-width: 250px;
-    background: #fff;
-    top: 50%;    
+    height: 5px;
+    max-width: 250px;    
 }
 
 .star hr::after {
-    color: #fff;
     background-color: #18bc9c;
+    color: #fff;
     font-family: fontAwesome;
     content: '\f005';
     font-size: 32px;
+    padding: 0 8px;
     position: absolute;
     bottom: 50%;
     left: 50%;
     transform: translateY(50%) translateX(-50%);
-    padding: 0 8px;
 }
 
 /*aplicando estilos al separador azul*/
@@ -142,30 +152,32 @@ header div span {
 }
 
 .star-blue hr {
-    height: 5px;
-    border-style: none;
-    max-width: 250px;
     background: #2c3e50;
-    top: 50%;    
+    border-style: none;
+    height: 5px;    
+    max-width: 250px; 
 }
 
 .star-blue hr::after {
-    color: #2c3e50;
     background-color: #fff;
+    color: #2c3e50;
     font-family: fontAwesome;
     content: '\f005';
     font-size: 32px;
+    padding: 0 8px;
     position: absolute;
     bottom: 50%;
     left: 50%;
-    transform: translateY(50%) translateX(-50%);
-    padding: 0 8px;
+    transform: translateY(50%) translateX(-50%); 
 }
 
 /*aplicando estilos a portfolio*/
 
 #portfolio {
-    color: #2c3e50; 
+    background: #fff;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0 0 100px 0; 
 }
 
 .images-portafolio {
@@ -175,14 +187,22 @@ header div span {
     padding: 0;
 }
 
-.images-portafolio figure {
-    width: 350px;
+.images-portafolio .image {
     display: inline-block;
     margin: 5px 15px 20px 15px;
+    width: 350px;
 }
 
 .images-portafolio figure img {
     width: 100%;
+}
+
+.image a{
+    display: block;
+}
+
+.image a:hover {
+    background-color: #18bc9c;
 }
 
 /*aplicando estilos a about*/
@@ -194,35 +214,36 @@ header div span {
 }
 
 #about p {
+    display: inline-block;
     width: 350px;
     font-size: 20px;
     margin: 15px;
-    display: inline-block;
     line-height: 32px;
     text-align: left;
 }
 
 #about a {
     box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 5px;
     display: block;
     width: 210px;
     height: 50px;
-    border: 2px solid #fff;
-    border-radius: 5px;
     font-size: 20px;
-    padding: 10px;
     margin: 20px auto;
+    padding: 10px;
 }
 
 #about a:hover {
-    color: #18bc9c;
     background-color: #fff;
+    color: #18bc9c;
 }
 
 /*aplicando estilos a contact*/
 
 #contact {
-    color: #2c3e50; 
+    background: #fff;
+    color: #2c3e50;  
 }
 
 form {
@@ -236,42 +257,45 @@ form {
 }
 
 input {
+    border: none;
+    font-size: 25px;
     width: 730px;
     height: 48px;
     outline: none;
-    border: none;
-    font-size: 25px;
 }
 
 textarea {
-    width: 730px;
-    height: 120px;
-    outline: none;
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: .5px solid rgb(221, 220, 220);
-    resize: none;
     font-size: 25px;
+    width: 730px;
+    height: 120px;
+    outline: none;
+    resize: none;
 }
 
 label {
-    text-align: left;
-    visibility: visible;
-    font-size: 14px;
     color: #18bc9c;
+    font-size: 14px;
+    text-align: left;
+}
+
+input:focus {
+    visibility: visible;
 }
 
 #button {
-    width: 78px;
-    height: 48px;
-    margin: 75px 0;
     background: #18bc9c;
     border-radius: 4px;
     color: #fff;
+    cursor: pointer;
     font-size: 20px;
     font-weight: 700;
-    cursor: pointer;
+    width: 78px;
+    height: 48px;
+    margin: 75px 0;
 }
 
 /*aplicando estilos a footer*/
@@ -285,15 +309,13 @@ footer {
 footer div {
     margin: 0 auto;
     width: 1140px;
-    outline: 1px solid blue;
     overflow: hidden;
 }
 
 .information {
-    outline: 1px solid pink;
+    float: left;
     width: 350px;
     text-align: center;
-    float: left;
     margin: 15px;
 }
 
@@ -306,33 +328,286 @@ footer p {
 }
 
 .copyright {
-    text-align: center;
     font-size: 15px;
-    padding: 20px;
+    text-align: center;
     margin: 0;
+    padding: 20px;
 }
 
 .redes {
-    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 50%;
     box-sizing: border-box;
+    display: inline-block;
     width: 50px;
     height: 50px;
-    margin: 3px;
-    border-radius: 50%;
-    border: 2px solid #fff;
+    margin: 2px;  
 }
 
 .redes a, .redes i {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
     border-radius: 50%;
+    box-sizing: border-box;
     display: block;
     font-size: 20px;
+    width: 100%;
+    height: 100%;
     padding: 7px 0;
 }
 
 .redes a:hover {
     background: #fff;
     color: #18bc9c;
+}
+
+.information p a {
+    color: #18bc9c;
+}
+
+/*APLICANDO ESTILOS A MEDIA QUERI*/
+
+@media (min-width:990px) and (max-width:1199px) {
+    .images-portafolio {
+        width: 968px;
+    }
+    
+    .images-portafolio .image {
+        width: 289px;
+    }
+
+    #about {
+        height: 650px;
+    }
+    
+    #about p {
+        width: 289px;
+    }
+    
+    form {
+        width: 690px;
+    }
+    
+    input {
+        width: 690px;
+    }
+    
+    textarea {
+        width: 690px;
+    }
+    
+    footer div {
+        width: 960px;
+    }
+    
+    .information {
+        width: 289px;
+    }
+}
+
+@media (min-width:770px) and (max-width:989px) {
+
+    .menu-bar ul{
+        width: 85px;
+        height: 38px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .menu-bar ul:hover {
+        background-color: #18bc9c;
+        border: none;
+    }
+
+    .menu-bar ul li {
+        position: relative;
+        top: 8px;
+        left: -30px;
+        box-sizing: border-box;
+        display: none;
+        margin: 0;
+    }
+
+    .menu-bar ul:hover li {
+        display: block;
+        width: 120px;
+        height: 40px;
+        background-color: #2c3e50;
+        padding-top: 15px;
+    }
+
+    .menu-bar ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        height: 800px;
+    }
+    
+    header .container {
+        width: 690px;
+        padding: 90px 0 0 0;
+        margin: auto;
+    }
+    .images-portafolio {
+        width: 728px;
+    }
+    
+    .images-portafolio .image {
+        width: 210px;
+    }
+
+    #about {
+        height: 600px;
+    }
+    
+    #about p {
+        width: 690px;
+    }
+    
+    form {
+        width: 610px;
+    }
+    
+    input {
+        width: 610px;
+    }
+    
+    textarea {
+        width: 610px;
+    }
+    
+    footer div {
+        width: 720px;
+    }
+    
+    .information {
+        width: 210px;
+    }
+}
+
+@media (min-width:575px) and (max-width:769px) {
+    header {
+        height: 650px;
+    }
+    
+    header .container {
+        width: 510px;
+        padding: 90px 0 0 0;
+        margin: auto;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    
+    header div span {
+        font-size: 22px;
+    }
+    #portfolio {
+        padding: 0 0 60px 0; 
+    }
+    .images-portafolio {
+        width: 548px;
+    }
+    
+    .images-portafolio .image {
+        width: 150px;
+    }
+
+    #about {
+        height: 650px;
+    }
+    
+    #about p {
+        width: 510px;
+    }
+    
+    form {
+        width: 510px;
+    }
+    
+    input {
+        width: 510px;
+    }
+    
+    textarea {
+        width: 510px;
+    }
+    
+    footer div {
+        width: 510px;
+    }
+    
+    .information {
+        width: 500px;
+    }
+}
+
+@media (max-width:574px) {
+    header {
+        height: 600px;
+    }
+    
+    header .container {
+        width: 90%;
+        padding: 70px 0 0 0;
+        margin: auto;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    
+    header div span {
+        font-size: 20px;
+    }
+    #portfolio {
+        padding: 0; 
+        margin: auto;
+    }
+    .images-portafolio {
+        width: 85%;
+        margin: auto;
+    }
+    
+    .images-portafolio .image {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    #about {
+        width: 85%;
+        margin: auto;
+        height: 750px;
+    }
+    
+    #about p {
+        width: 100%;
+    }
+    
+    form {
+        width: 95%;
+    }
+    
+    input {
+        width: 85%;
+    }
+    
+    textarea {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+    
+    footer div {
+        width: 85%;
+    }
+    
+    .information {
+        width: 85%;
+    }
 }
